@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<div class = "container-fluid">
+    <div class ="row">
+        <div class = "col-xs-6">
+        <h1>Introduction</h1>
+            <p>
+                I know, I know, this website doesn't look that good. And you know why? It's hard! I thought it would be difficult, but like many of my projects, I underestimated its rigor. But I guess that's what makes programming so fun! I started working on this website in the beginning of December 2016. It took me a lot of tutorials and quite a bit of trial and error to wrap my head around how web programming (if you can call it that, it's really just a bunch of HTML and CSS) works. I'll get into Javascript and other libraries a bit later. 
+            </p>
+            <p>
+                The reason why this website looks so bad as of January 3rd, 2016, is because I didn't want to use any auto-generated stuff like weebly or wordpress. I'm not the type of person to borrow off someone else's work if I have no idea what's going on. As a result, I've taken a lot of time to get adjusted to making websites, but I also have a larger amount of control over what I can do. <b>MAIN POINT: This website is built from scratch</b>. 
+            </p>
+            <p>
+                So bear with me, this is going to take me a little while, but I'll eventually make this into something decent.
+            </p>
+            <p>
+            <b>QUICK NOTE</b>
+            I'm the type of person who likes to do everything himself. And I find more joy in the actual process of creating something than seeing something complete, so I have lots of unfinished projects. This may even become one. 
+            </p>
+            <p> 
+            So take a look around, explore this website that doesn't look too good right now. If you come back in a week or so, it will probably have changed. The longer you wait the more it will have changed (hopefully)!
+            </p>
+        </div>
+        <div class = "col-xs-6">
+            <h1> Blog Posts</h1>
+        <p >
+           I am going to put my blog posts here. 
+        </p>           
+        
+            {% for post in site.posts %}
+                <p class = "padding-top">
+                    <a href = "{{site.baseurl}}{{post.url}}">
+                        <b>{{post.title}}</b> 
+                        <br>
+                        {{post.date | date: "%B %-d, %Y"}}
+                    </a>
+                </p>
+            {%endfor%}
+        </div>
+    </div>
+</div>

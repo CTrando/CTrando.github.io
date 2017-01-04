@@ -1,0 +1,28 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{post.title}}</title>
+        <link href="{{site.baseurl}}/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+        <link href="{{site.baseurl}}/bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="{{site.baseurl}}/bootstrap/css/myCustom.css" rel="stylesheet">
+    </head>
+<body class = "background">
+    {% include header.html %}
+    <div class = "row container-fluid">
+        <div class = "col-xs-8">
+            <h1>
+                {% if page.title != null %} 
+                    {{page.title}}
+                {% else %}
+                    {{site.title}}
+                {% endif %}
+            </h1>
+            {{content}}
+        </div>
+    </div>
+</body>
+    
+    
+</html>

@@ -1,0 +1,61 @@
+@font-face{
+    font-family: "Oswald";
+    src: url("https://fonts.googleapis.com/css?family=Oswald");
+}
+
+.custom{
+    font-family: "Oswald";
+    font-size: 48px;
+    color: black;
+    padding-bottom: 25px;
+}
+
+.cContainer{
+    font-family: "Oswald";
+    background-image: url("http://kaba35.com/wp-content/uploads/2015/11/Savin-NY-Website-Background-Web.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.entry{
+    padding-left: 50px;
+}
+
+.small-font{
+    font-size: 15px;
+    color: blue;
+    padding-left: 70px;
+}
+
+.padLeft{
+    padding-left: 70px;
+}
+
+.padRight{
+    padding-right: 70px;
+}
+
+.standardFont{
+    font-family: "Oswald";
+    font-size: 20px;
+}
+
+.postRound{
+    padding-right: 70px;
+    padding-left: 70px;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: lightgray;
+    width: auto;
+    height: auto;
+}
+
+.dropdown{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+
+
