@@ -45,3 +45,22 @@ p{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+footer{
+    background-color:lightslategrey;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+html{
+    position:relative;
+    min-height: 100%;
+}
+
+body{
+    padding-bottom: 150px;
+}
