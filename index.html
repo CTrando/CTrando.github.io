@@ -25,11 +25,10 @@ layout: default
             </p>
         </div>
         <div class = "col-xs-6">
-            <h1> Blog Posts</h1>
+        <h1>Blog Posts</h1>
         <p >
            I am going to put my blog posts here. 
         </p>           
-        
             {% for post in site.posts %}
                 <p class = "padding-top">
                     <a href = "{{site.baseurl}}{{post.url}}">
@@ -39,6 +38,32 @@ layout: default
                     </a>
                 </p>
             {%endfor%}
+        <p>
+            I'll put my documentation right underneath.    
+        </p>
+        <h1>Documentation</h1>
+            {% for doc in site.documentation %}
+                <p class = "padding-top">
+                    <a href = "{{site.baseurl}}{{doc.url}}">
+                        <b>{{doc.title}}</b> 
+                    </a>
+                </p>
+            {% endfor %}
+        
+<!--    
+        testing aisle here! 
+-->
+        <h1>This part will be reserved for testing!</h1>
+        <div style = "margin-left:50px">
+            <button type = "button" class = "btn btn-link">
+            Really long piece of text that you will need a huge monitor to read, and even with one you probably won't see the rest of this message. If you have taken the effort to read this message, you either have a huge monitor, or you were smart and used the horizontal scroll bar at the bottom of the page for google chrome. With that said, Hi Stanford!
+            </button>
+            <button type = "button" class="btn btn-danger disabled" >
+                Can't click me!
+            </button>
+        </div>
+    
+            
         </div>
     </div>
 </div>
