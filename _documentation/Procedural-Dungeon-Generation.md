@@ -51,7 +51,7 @@ When I was doing this back in July, it was not nearly so elegant, but I've grown
 
 Anyways, I would now have placed rooms; usually I generated around 10 of them, but for sake of documentation, I will only do a few. 
 
-![TileBoard-Room-Only]({{site.baseurl}}/images/pdg-tileboard-only-rooms.png)	
+![TileBoard-Room-Only]({{site.baseurl}}/images/pdgtileboardonlyrooms.png)	
 
 **Image increased in size for clarification.**
 
@@ -89,7 +89,7 @@ mainController.doorList.add(newDoor);
 ```
 It would look something like this, with the green representing the doors.
 
-![TileBoard-Room-With-Doors]({{site.baseurl}}/images/pdg-tileboard-room-with-doors.png)
+![TileBoard-Room-With-Doors]({{site.baseurl}}/images/pdgtileboardroomwithdoors.png)
 
 Now here is the main part of this process. For each door, I would find its closest neighbor, and create a path connecting with it. 
 
@@ -131,7 +131,7 @@ public void createPath(Tile start, Tile end){
 
 That process will lead to a problem of floating rooms however. As can be seen below:
 
-![TileBoard-Room-Incomplete-Paths]({{site.baseurl}}/images/pdg-tileboard-rooms-incomplete-paths.png)	
+![TileBoard-Room-Incomplete-Paths]({{site.baseurl}}/images/pdgtileboardroomsincompletepaths.png)	
 
 The rooms are not connected. So if I were to start out at one point in the floor, I would not be able to hit eery single tile. 
 
@@ -169,4 +169,4 @@ public void assertContinuity{
 So that is basically the process of how I did procedural dungeon generation the first time. It took me at least a month to finish it, but I soon replaced it. I shall detail that later because it is getting late.
 
 
-![test]({{site.baseurl}}/images/treekodefaultdown.png)
+![test]({{site.baseurl}}/images/pdgfinaltileboard.png)
