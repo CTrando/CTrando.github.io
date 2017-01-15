@@ -133,7 +133,7 @@ That process will lead to a problem of floating rooms however. As can be seen be
 
 <!--![TileBoard-Room-Incomplete-Paths]({{site.baseurl}}/images/pdgtileboardroomsincompletepaths.png)-->	     
 
-![TileBoard-Room-Incomplete-Paths] ({{site.baseurl}}/images/treekodefaultdown.png)
+![TileBoard-Room-Incomplete-Paths]({{site.baseurl}}/images/treekodefaultdown.png)
 
 The rooms are not connected. So if I were to start out at one point in the floor, I would not be able to hit eery single tile. 
 
