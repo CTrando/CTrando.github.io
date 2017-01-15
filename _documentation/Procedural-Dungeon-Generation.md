@@ -168,6 +168,5 @@ public void assertContinuity{
 
 So that is basically the process of how I did procedural dungeon generation the first time. It took me at least a month to finish it, but I soon replaced it. I shall detail that later because it is getting late.
 
-{{site.baseurl}}
 
-![TileBoard-Final-Room]({{site.baseurl}}/images/pdg-final-tileboard.png)
+![TileBoard-Final-Room]({{site.baseurl}}/images/treekodefaultdown.png)
