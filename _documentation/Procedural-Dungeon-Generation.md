@@ -26,7 +26,7 @@ Where GenericTile is just the average tile.
 
 That would result in something like this, where I represent GenericTiles as a solid black. 
 
-![TileBoard-Blank]({{site.baseurl}}/images/pdg-blank-tileboard.png?raw=true)
+![TileBoard-Blank]({{site.baseurl}}/images/pdg-blank-tileboard.png)
 
 Next, I would place a random amount of rooms. Rooms are denoted by groups of tiles that are at least 2x3 (widthxheight). I would do this by picking a random row and a random column and using that as a starting point. I would then generate a random width and height that are greater than my minimums. 
 
@@ -89,7 +89,7 @@ mainController.doorList.add(newDoor);
 ```
 It would look something like this, with the green representing the doors.
 
-![TileBoard-Room-With-Doors]({{site.baseurl}}/images/pdg-tileboard-room-with-doors.png?raw=true)
+![TileBoard-Room-With-Doors]({{site.baseurl}}/images/pdg-tileboard-room-with-doors.png)
 
 Now here is the main part of this process. For each door, I would find its closest neighbor, and create a path connecting with it. 
 
@@ -131,7 +131,7 @@ public void createPath(Tile start, Tile end){
 
 That process will lead to a problem of floating rooms however. As can be seen below:
 
-![TileBoard-Room-Incomplete-Paths]({{site.baseurl}}/images/pdg-tileboard-rooms-incomplete-paths.png?raw=true)	
+![TileBoard-Room-Incomplete-Paths]({{site.baseurl}}/images/pdg-tileboard-rooms-incomplete-paths.png)	
 
 The rooms are not connected. So if I were to start out at one point in the floor, I would not be able to hit eery single tile. 
 
@@ -168,4 +168,6 @@ public void assertContinuity{
 
 So that is basically the process of how I did procedural dungeon generation the first time. It took me at least a month to finish it, but I soon replaced it. I shall detail that later because it is getting late.
 
-![TileBoard-Final-Room]({{site.baseurl}}/images/pdg-final-tileboard.png?raw=true)
+{{site.baseurl}}
+
+![TileBoard-Final-Room]({{site.baseurl}}/images/pdg-final-tileboard.png)
