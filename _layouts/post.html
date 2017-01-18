@@ -8,22 +8,18 @@
         <link href="{{site.baseurl}}/bootstrap/css/bootstrap.css" rel="stylesheet">
         <link href="{{site.baseurl}}/bootstrap/css/myCustom.css" rel="stylesheet">
     </head>
-<body class = "background margin-left">
+<body class = "background margin-left margin-right">
     {% include header.html %}
-    <div class = "row container-fluid">
-        <div class = "col-xs-8">
-            <h1>
-                {% if page.title != null %} 
-                    {{page.title}}
-                {% else %}
-                    {{site.title}}
-                {% endif %}
-            </h1>
-            {{content}}
-        </div>
+    <div class = "col-xs-12">
+        <h1>
+            {% if page.title != null %} 
+                {{page.title}}
+            {% else %}
+                {{site.title}}
+            {% endif %}
+        </h1>
+        {{content}}
     </div>
-</body>
-    {% include footer.html %}
-    
-    
+    </body>
+   {% include footer.html %}
 </html>

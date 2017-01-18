@@ -10,11 +10,15 @@
 }
 
 .margin-left{
-    margin-left: 60px;
+    margin-left: 2%;
+}
+
+.margin-right{
+    margin-right: 5%;
 }
 
 .padding-top{
-    padding-top: 20px;
+    padding-top: 2%;
 }
     
 h1{
@@ -53,7 +57,7 @@ footer{
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 100px;
+    height: 1%;
     width: 100%;
     overflow: hidden;
 }
@@ -64,5 +68,5 @@ html{
 }
 
 body{
-    padding-bottom: 150px;
+    padding-bottom: 1%px;
 }
