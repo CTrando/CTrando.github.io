@@ -9,12 +9,10 @@
     color: black;
 }
 
-.margin-left{
+.my-margin{
     margin-left: 2%;
-}
-
-.margin-right{
     margin-right: 5%;
+    margin-bottom: 15%;
 }
 
 .padding-top{
@@ -57,7 +55,7 @@ footer{
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 1%;
+    height: 75;
     width: 100%;
     overflow: hidden;
 }
@@ -68,5 +66,5 @@ html{
 }
 
 body{
-    padding-bottom: 1%px;
+    padding-bottom: 5px;
 }

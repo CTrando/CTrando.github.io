@@ -135,7 +135,7 @@ That process will lead to a problem of floating rooms however. As can be seen be
 
 ![TileBoard-Room-Incomplete-Paths](https://raw.githubusercontent.com/CTrando/CTrando.github.io/master/images/pdgtileboardroomsincompletepaths.PNG)
 
-The rooms are not connected. So if I were to start out at one point in the floor, I would not be able to hit eery single tile. 
+The rooms are not connected. So if I were to start out at one point in the floor, I would not be able to hit every single tile. 
 
 This stumped me for quite a while, but what I ended up doing was a modified djikstra's algorithm, For the purpose of length, I will not detail how I implented the algorithm, but essentially, it is the repetitive process of checking neighbors over and over. 
 

@@ -333,6 +333,9 @@ if (typeof jQuery === 'undefined') {
 
   Carousel.TRANSITION_DURATION = 600
 
+/*
+  This is the part you should change
+*/
   Carousel.DEFAULTS = {
     interval: 5000,
     pause: 'hover',
