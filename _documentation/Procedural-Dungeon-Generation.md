@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Procedural Dungeon Generation 
-permalink: /procedural-dungeon-generation-method-1/
+title: Procedural Dungeon Generation v1
+permalink: /procedural-dungeon-generation-v-1/
+tags: algorithm
 ---
 
 The process of procedurally generating random dungeons is one that had stumped me for many weeks. In my first few months as a beginner program, PDG was one of my largest goals, but the scope was so great that I put it off for a while. 

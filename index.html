@@ -39,14 +39,15 @@ layout: default
                     </a>
                 </p>
             {%endfor%}
-        <p>
-            I'll put my documentation right underneath.    
-        </p>
+            
         <h1>Documentation</h1>
             {% for doc in site.documentation %}
                 <p class = "padding-top">
                     <a href = "{{site.baseurl}}{{doc.url}}">
                         <b>{{doc.title}}</b> 
+                        <div style = "padding-left: 15px">
+                            tags: {{doc.tags}}
+                        </div>
                     </a>
                 </p>
             {% endfor %}
@@ -54,7 +55,7 @@ layout: default
 <!--    
         testing aisle here! 
 -->
-        <h1>This part will be reserved for testing!</h1>
+        <h1>Bootstrap Testing</h1>    
         <div>
             <button type = "button" class = "btn btn-link">
             Really long piece of text that you will need a huge monitor to read, and even with one you probably won't see the rest of this message. If you have taken the effort to read this message, you either have a huge monitor, or you were smart and used the horizontal scroll bar at the bottom of the page for google chrome. With that said, Hi Stanford!
@@ -62,7 +63,7 @@ layout: default
             <button type = "button" class="btn btn-danger disabled" >
                 Can't click me!
             </button>
-            
+        
             <div id = "test" class = "carousel slide" data-ride = "carousel" data-interval = "10000">
                 <a href="#test" data-slide="next">
                     <p>
@@ -86,9 +87,19 @@ layout: default
                 </div>
                 
             </div>
+
+            <h1> jQuery Testing </h1>
+            <button class = "hello">
+            Click me for a message
+            </button>
+
+            <script src = "{{site.baseurl}}/test.js">
+            </script>
+
         </div>
-    
-            
         </div>
     </div>
+
+
 </div>
+
