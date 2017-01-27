@@ -47,7 +47,7 @@ p{
 .background{
     background-image: url("http://kaba35.com/wp-content/uploads/2015/11/Savin-NY-Website-Background-Web.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
 }
 
 footer{
