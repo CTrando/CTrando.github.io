@@ -5,6 +5,7 @@
 function init(){
     initFadeInText();
     initSwitchFadeText();
+    initFadeInButton();
 }
 
 $(document).ready(init());
