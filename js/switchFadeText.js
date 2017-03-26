@@ -22,7 +22,7 @@ function finishedLooping() {
 function update() {
     var sentence = setNextDiv();
     if(sentence != null) {
-        $("#intro-switch").html(sentence).css("color", "firebrick").fadeIn(250);
+        $("#intro-switch").html(sentence).css("color", "black").fadeIn(250);
     }
 
     if (!finishedLooping()) {
