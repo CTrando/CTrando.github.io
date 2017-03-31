@@ -5,7 +5,7 @@
 function initFadeInButton() {
 
     function fadeButton() {
-        $("#fly-in-element").each(function(index){
+        $(".fly-in-element").each(function(index){
            $(this).animate({
                top: "0px"
            }, 600);

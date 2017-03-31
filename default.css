@@ -26,8 +26,7 @@ body {
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+    user-select: none;
 }
 
 h1, h2, h3 {
@@ -230,11 +229,14 @@ ul.contact li a:before {
 /* Button Style                                                                  */
 /*********************************************************************************/
 
+
+
 .button {
     display: inline-block;
     margin-top: 2em;
+    margin-right: 2em;
     padding: 1em 2em 1em 2em;
-    background: #ff6816;
+    background: lightblue;
     border-radius: 8px;
     letter-spacing: 0.20em;
     line-height: 1.8em;
@@ -245,16 +247,20 @@ ul.contact li a:before {
     color: #FFF;
 }
 
+.button:hover {
+    background: blue;
+}
+
 .button:before {
     display: inline-block;
-    background: #8DCB89;
+    background: blue;
     margin-right: 1em;
-    width: 40px;
+    width: 50px;
     height: 40px;
     line-height: 40px;
     border-radius: 20px;
     text-align: center;
-    color: #272925;
+    color: blue;
 }
 
 .button-small {
@@ -313,11 +319,30 @@ ul.contact li a:before {
 /* Logo                                                                          */
 /*********************************************************************************/
 
-#intro {
-    height: 50vh;
-    padding-top: 5em;
-    padding-bottom: 5em;
+body,html{
+    height: 100%;
+    overflow:hidden;
+}
 
+#front-page {
+    position: relative;
+    background:white;
+    height: 100%;
+}
+
+
+#bottom-buttons {
+    width: 100%;
+    text-align: center;
+    list-style-position: inside;
+    position:absolute;
+    bottom: 0;
+}
+
+#intro {
+    padding-top: 10em;
+
+    z-index: -1;
     text-align: center;
 }
 
@@ -373,7 +398,7 @@ ul.contact li a:before {
     color: #FFF;
 }
 
-#fly-in-element {
+.fly-in-element {
     text-align: center;
     position: relative;
     top: -1000px;

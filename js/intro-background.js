@@ -13,20 +13,7 @@ var drops =[];
 var splashes = [];
 
 function setup(){
-
-    var $frontpage = $("#front-page");
-    var width = $frontpage.width();
-    var height = $frontpage.height();
-
-    var offset = $frontpage.offset();
-
-    centerIntroX = offset.left + width/2;
-    centerIntroY = offset.top + height/2;
-
-    introYBound = offset.top+height;
-    introXBound = offset.left+width;
-
-    canvas = createCanvas(introXBound, introYBound);
+    canvas = createCanvas(windowWidth, windowHeight);
     canvas.background(255,0,255);
     canvas.position(0,0);
     canvas.style("z-index", "-1");
@@ -62,14 +49,6 @@ function draw(){
     for(var j = 0; j< 25; j++){
         splashes[j].draw();
         //splashes[j].update();
-    }
-
-    if(!isComplete){
-        ellipse(i, i, i, i);
-        if(i > centerIntroX){
-            isComplete = true;
-        }
-        i+= 8;
     }
 }
 
