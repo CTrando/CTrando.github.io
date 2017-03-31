@@ -1,8 +1,11 @@
-:root
-{
-    --font-color: black;
+@font-face {
+    font-family: "Merriweather";
+    src: url("https://fonts.googleapis.com/css?family=Merriweather");
 }
 
+:root {
+    --font-color: black;
+}
 
 html, body {
     height: 100%;
@@ -12,10 +15,19 @@ body {
     margin: 0px;
     padding: 0px;
     background: #333333;
-    font-family: 'Palatino Linotype', sans-serif;
+    font-family: "Merriweather", sans-serif;
     font-size: 12pt;
     font-weight: 400;
     color: #000000;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
 h1, h2, h3 {
@@ -302,7 +314,7 @@ ul.contact li a:before {
 /*********************************************************************************/
 
 #intro {
-    height: 40%;
+    height: 50vh;
     padding-top: 5em;
     padding-bottom: 5em;
 
@@ -390,14 +402,13 @@ ul.contact li a:before {
 /* Wrapper                                                                       */
 /*********************************************************************************/
 
-.body
-{
+.body {
     font-size: 1.4em;
     padding-top: 2em;
     text-align: center;
 }
 
-.column-left{
+.column-left {
     float: left;
 
     /*
@@ -407,7 +418,7 @@ ul.contact li a:before {
     padding-bottom: 2em;
 }
 
-.column-right{
+.column-right {
     text-align: left;
     float: right;
     width: 50%;
@@ -415,7 +426,7 @@ ul.contact li a:before {
     padding-bottom: 2em;
 }
 
-.column-left h1{
+.column-left h1 {
     padding-bottom: .3em;
 }
 
@@ -434,7 +445,7 @@ ul.contact li a:before {
 }
 
 #hello {
-    overflow:auto;
+    overflow: auto;
     display: block;
 }
 
@@ -485,8 +496,7 @@ ul.contact li a:before {
     color: rgba(0, 0, 0, 0.8);
 }
 
-.show-on-scroll
-{
+.show-on-scroll {
     display: none;
 }
 

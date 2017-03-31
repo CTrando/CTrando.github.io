@@ -2,12 +2,12 @@
  * Created by Cameron on 3/22/2017.
  */
 
-function init(){
+function init() {
     initFadeInText();
     initSwitchFadeText();
-   initFadeInButton();
-   initShowOnScroll();
+    initFadeInButton();
+    initShowOnScroll();
 }
 
 
-$(document).ready(init());
+$(document).ready(init);

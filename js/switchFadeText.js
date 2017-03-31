@@ -5,7 +5,7 @@ var messages = [
     "programmer."
 ];
 var index = 0;
-var loop;
+var isLooping;
 
 function setNextDiv() {
     if(index < messages.length) {
@@ -30,12 +30,12 @@ function update() {
             $("#intro-switch").fadeOut(250);
         }, 1750);
     } else {
-        clearInterval(loop);
+        clearInterval(isLooping);
     }
 }
 
 function initSwitchFadeText() {
-    loop = setInterval(function () {
+    isLooping = setInterval(function () {
         update();
     }, 2000);
 }
