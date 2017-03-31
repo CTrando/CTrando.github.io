@@ -334,14 +334,13 @@ body,html{
 #bottom-buttons {
     width: 100%;
     text-align: center;
-    list-style-position: inside;
     position:absolute;
-    bottom: 0;
+    bottom: 10%;
+
 }
 
 #intro {
-    padding-top: 20%;
-    z-index: -1;
+    padding-top: 10%;
     text-align: center;
 }
 
