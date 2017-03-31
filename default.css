@@ -340,8 +340,7 @@ body,html{
 }
 
 #intro {
-    padding-top: 10em;
-
+    padding-top: 20%;
     z-index: -1;
     text-align: center;
 }
