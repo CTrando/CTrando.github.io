@@ -14,7 +14,7 @@ html, body {
 body {
     margin: 0px;
     padding: 0px;
-    background: #333333;
+    background: white;
     font-family: "Merriweather", sans-serif;
     font-size: 12pt;
     font-weight: 400;
@@ -29,7 +29,7 @@ body {
     user-select: none;
 }
 
-h1, h2, h3 {
+h1, h3 {
     margin: 0;
     padding: 0;
 }
@@ -61,6 +61,36 @@ a:hover {
 .container {
     padding: 2em;
 }
+
+.left-container {
+    float:left;
+    width: 45%;
+    text-align: left;
+}
+
+.right-container {
+    float:right;
+    width: 45%;
+    text-align: left;
+}
+
+.right-container p {
+
+}
+
+.info img {
+    width: 50%;
+    border-radius: 10px;
+    border: 6px solid black;
+    object-fit: contain;
+}
+
+.info {
+
+}
+
+
+
 
 /*********************************************************************************/
 /* Form Style                                                                    */
@@ -276,7 +306,8 @@ ul.contact li a:before {
 /*********************************************************************************/
 
 .title {
-    margin-bottom: 3em;
+    text-align: left;
+    margin-bottom: 1.5em;
 }
 
 .title h1 {
@@ -304,7 +335,7 @@ ul.contact li a:before {
 #header-wrapper {
     overflow: hidden;
     padding: 5em 0em;
-    background: #8DCB89 url(images/header.jpg) no-repeat center;
+    background: #8DCB89 url(../images/header.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -400,7 +431,6 @@ body,html{
     text-align: center;
     position: relative;
     top: -1000px;
-    text-decoration: firebrick;
 }
 
 #fade-menu li:hover a, #fade-menu li.active a, #fade-menu li.active span {
