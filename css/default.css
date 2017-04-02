@@ -262,6 +262,7 @@ ul.contact li a:before {
 
 
 
+
 .button {
     display: inline-block;
     margin-top: 2em;
@@ -276,6 +277,11 @@ ul.contact li a:before {
     font-weight: 400;
     font-size: 1.2em;
     color: #FFF;
+}
+
+.button a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .button:hover {
@@ -366,9 +372,7 @@ body,html{
 #bottom-buttons {
     width: 100%;
     text-align: center;
-    position:absolute;
-    bottom: 10%;
-
+    height: 142px;
 }
 
 #intro {
