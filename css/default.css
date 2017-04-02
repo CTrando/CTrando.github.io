@@ -72,6 +72,7 @@ a:hover {
     float:right;
     width: 45%;
     text-align: left;
+    height: 50%;
 }
 
 .right-container p {
@@ -352,13 +353,13 @@ ul.contact li a:before {
 
 body,html{
     height: 100%;
-    overflow:hidden;
 }
 
 #front-page {
     position: relative;
     background:white;
     height: 100%;
+    overflow:hidden;
 }
 
 
@@ -430,7 +431,9 @@ body,html{
 .fly-in-element {
     text-align: center;
     position: relative;
-    top: -1000px;
+
+    /** virtual height depends on the monitor so therefore it should work regardless of screen size*/
+    top: -100vh;
 }
 
 #fade-menu li:hover a, #fade-menu li.active a, #fade-menu li.active span {
