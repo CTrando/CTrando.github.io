@@ -68,6 +68,11 @@ a:hover {
     text-align: left;
 }
 
+.content-row {
+    overflow: hidden;
+    padding-bottom: 2em;
+}
+
 .right-container {
     float:right;
     width: 45%;
@@ -372,7 +377,6 @@ body,html{
 #bottom-buttons {
     width: 100%;
     text-align: center;
-    height: 142px;
 }
 
 #intro {
