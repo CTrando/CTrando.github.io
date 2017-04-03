@@ -88,7 +88,6 @@ a:hover {
     width: 90%;
     border-radius: 10px;
     border: 2px solid black;
-    object-fit: contain;
 }
 
 .info {
