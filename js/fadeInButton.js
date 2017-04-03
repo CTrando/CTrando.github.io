@@ -12,7 +12,7 @@ function initFadeInButton() {
         });
     }
 
-    setTimeout(fadeButton, 9500);
+    setTimeout(fadeButton, 7500);
 }
 
 

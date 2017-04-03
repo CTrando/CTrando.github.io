@@ -85,9 +85,9 @@ a:hover {
 }
 
 .info img {
-    width: 50%;
+    width: 90%;
     border-radius: 10px;
-    border: 6px solid black;
+    border: 2px solid black;
     object-fit: contain;
 }
 

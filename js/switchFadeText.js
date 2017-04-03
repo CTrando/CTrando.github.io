@@ -1,6 +1,5 @@
 var messages = [
     "student.",
-    "tutor.",
     "thinker.",
     "programmer."
 ];
