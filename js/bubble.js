@@ -8,6 +8,15 @@ function Bubble() {
 
     this.radius = random(50, 100);
 
+    this.randomizePos = function() {
+        this.pos = createVector(random(0, windowWidth), random(0, windowHeight));
+    };
+
+    this.reverse = function (vec) {
+        this.reverseX(vec);
+        this.reverseY(vec);
+    };
+
     this.reverseX = function (vec) {
         vec.set(vec.x * -1, vec.y);
     };
@@ -21,6 +30,8 @@ function Bubble() {
     };
 
     this.update = function () {
+        mousePos = createVector(mouseX, mouseY);
+
         this.pos.x += this.vel.x;
         this.pos.y += this.vel.y;
 
@@ -30,6 +41,13 @@ function Bubble() {
 
         if (this.pos.y > windowHeight || this.pos.y < 0) {
             this.reverseY(this.vel);
+        }
+
+        if(mousePos.dist(this.pos) < this.radius){
+            dX = mousePos.x - this.pos.x;
+            dY = mousePos.y - this.pos.y;
+
+            this.vel = createVector(random(0, -1*dX/10), random(0, -1* dY/10));
         }
     }
 }
@@ -63,5 +81,14 @@ function draw() {
     for (var i = 0; i < bubbles.length; i++) {
         bubbles[i].update();
         bubbles[i].draw();
+    }
+}
+
+function windowResized(){
+    resizeCanvas(windowWidth, windowHeight);
+    canvas.background(255,255,255);
+
+    for(var i = 0; i< bubbles.length; i++){
+        bubbles[i].randomizePos();
     }
 }

@@ -368,7 +368,6 @@ body,html{
 #front-page {
     position: relative;
     background:white;
-    height: 100%;
     overflow:hidden;
 }
 
@@ -379,8 +378,12 @@ body,html{
     display: inline;
 }
 
+#bottom-buttons a {
+    text-decoration: none;
+}
+
 #intro {
-    padding-top: 10%;
+    margin-top: 10%;
     text-align: center;
 }
 
