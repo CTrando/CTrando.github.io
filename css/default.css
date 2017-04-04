@@ -376,6 +376,7 @@ body,html{
 #bottom-buttons {
     width: 100%;
     text-align: center;
+    display: inline;
 }
 
 #intro {
