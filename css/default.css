@@ -444,7 +444,7 @@ body,html{
     position: relative;
 
     /** virtual height depends on the monitor so therefore it should work regardless of screen size*/
-    top: -100vh;
+    left: -100vw;
 }
 
 #fade-menu li:hover a, #fade-menu li.active a, #fade-menu li.active span {

@@ -6,7 +6,7 @@ function Bubble() {
     this.pos = createVector(random(0, windowWidth), random(0, windowHeight));
     this.vel = createVector(random(0, 10), random(0, 10));
 
-    this.radius = random(50, 100);
+    this.diameter = random(50, 100);
 
     this.randomizePos = function() {
         this.pos = createVector(random(0, windowWidth), random(0, windowHeight));
@@ -26,7 +26,7 @@ function Bubble() {
     };
 
     this.draw = function () {
-        ellipse(this.pos.x, this.pos.y, this.radius, this.radius);
+        ellipse(this.pos.x, this.pos.y, this.diameter, this.diameter);
     };
 
     this.update = function () {
@@ -35,19 +35,36 @@ function Bubble() {
         this.pos.x += this.vel.x;
         this.pos.y += this.vel.y;
 
-        if (this.pos.x > windowWidth || this.pos.x < 0) {
+        if (this.pos.x > windowWidth -this.diameter/2 || this.pos.x < this.diameter/2) {
+            if(this.pos.x > windowWidth -this.diameter/2){
+                this.pos.x = windowWidth - this.diameter/2;
+            }
+
+            if(this.pos.x < this.diameter/2){
+                this.pos.x = this.diameter/2;
+            }
             this.reverseX(this.vel);
         }
 
-        if (this.pos.y > windowHeight || this.pos.y < 0) {
+        if (this.pos.y > windowHeight -this.diameter/2 || this.pos.y < this.diameter/2) {
+            if(this.pos.y > windowHeight -this.diameter/2){
+                this.pos.y = windowHeight -this.diameter/2;
+            }
+
+            if(this.pos.y < this.diameter/2) {
+                this.pos.y = this.diameter/2;
+            }
             this.reverseY(this.vel);
         }
 
-        if(mousePos.dist(this.pos) < this.radius){
-            dX = mousePos.x - this.pos.x;
-            dY = mousePos.y - this.pos.y;
+        /** Needs work **/
+        if(mousePos.dist(this.pos) < this.diameter/2){
+            /** direction mouse is in compared to the bubble **/
+            let dX = mousePos.x - this.pos.x;
+            let dY = mousePos.y - this.pos.y;
 
-            this.vel = createVector(random(0, -1*dX/10), random(0, -1* dY/10));
+            this.vel.x*= -1*(dX/Math.abs(dX));
+            this.vel.y*= -1*(dY/Math.abs(dY));
         }
     }
 }
