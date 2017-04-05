@@ -18,11 +18,11 @@ function Bubble() {
     };
 
     this.reverseX = function (vec) {
-        vec.set(vec.x * -1, vec.y);
+        vec.set(vec.x * -.8, vec.y);
     };
 
     this.reverseY = function (vec) {
-        vec.set(vec.x, vec.y * -1);
+        vec.set(vec.x, vec.y * -.8);
     };
 
     this.draw = function () {
@@ -98,6 +98,16 @@ function draw() {
     for (var i = 0; i < bubbles.length; i++) {
         bubbles[i].update();
         bubbles[i].draw();
+    }
+
+    if(mouseIsPressed){
+        var force = createVector(mouseX-pmouseX, mouseY-pmouseY);
+        force.normalize();
+        force.setMag(random(1,3));
+
+        for(var j =0; j< bubbles.length; j++){
+            bubbles[j].vel.add(force);
+        }
     }
 }
 

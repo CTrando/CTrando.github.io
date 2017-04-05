@@ -16,7 +16,7 @@ var t = 0;
 function setup(){
     canvas = createCanvas(windowWidth, windowHeight);
     background(255,255,255);
-    stroke(0);
+    stroke(color(0,0,240));
     canvas.position(0,0);
     frameRate(24);
 }
