@@ -5,6 +5,7 @@
 function Bubble() {
     this.pos = createVector(random(0, windowWidth), random(0, windowHeight));
     this.vel = createVector(random(0, 10), random(0, 10));
+    this.visible = true;
 
     this.diameter = random(50, 100);
 
@@ -26,10 +27,16 @@ function Bubble() {
     };
 
     this.draw = function () {
-        ellipse(this.pos.x, this.pos.y, this.diameter, this.diameter);
+        if(this.visible)  {
+            ellipse(this.pos.x, this.pos.y, this.diameter, this.diameter);
+        }
     };
 
     this.update = function () {
+        if(!this.visible) {
+            return;
+        }
+
         mousePos = createVector(mouseX, mouseY);
 
         this.pos.x += this.vel.x;
@@ -58,13 +65,17 @@ function Bubble() {
         }
 
         /** Needs work **/
-        if(mousePos.dist(this.pos) < this.diameter/2){
+        if(Math.abs(mousePos.dist(this.pos)) < this.diameter/2){
             /** direction mouse is in compared to the bubble **/
-            let dX = mousePos.x - this.pos.x;
-            let dY = mousePos.y - this.pos.y;
+            var dX = mousePos.x - this.pos.x;
+            var dY = mousePos.y - this.pos.y;
 
-            this.vel.x*= -1*(dX/Math.abs(dX));
-            this.vel.y*= -1*(dY/Math.abs(dY));
+            this.vel.x = Math.abs(this.vel.x) * -1*(dX/Math.abs(dX));
+            this.vel.y = Math.abs(this.vel.y) * -1*(dY/Math.abs(dY));
+        }
+
+        if(mouseIsPressed && mousePos.dist(this.pos) < this.diameter/2) {
+            this.visible = false;
         }
     }
 }
