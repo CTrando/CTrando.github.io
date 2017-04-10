@@ -111,6 +111,10 @@ function draw() {
     }
 }
 
+document.ontouchmove = function(event){
+    event.preventDefault();
+};
+
 function windowResized(){
     resizeCanvas(windowWidth, windowHeight);
     canvas.background(255,255,255);
