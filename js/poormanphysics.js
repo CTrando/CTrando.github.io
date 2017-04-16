@@ -55,8 +55,17 @@ function Player(){
 
         for(var j =0; j< nodes.length; j++){
             let dist = Math.abs(this.pos.dist(nodes[j]));
+
+            let nodePos = nodes[j];
+
+            let tempPos = this.pos.copy();
+            let distVector = tempPos.sub(nodePos);
+            distVector.normalize();
+
             if(dist < this.radius) {
-                this.reverse(this.vel);
+                let prevMag = this.vel.mag();
+                this.vel.set(distVector);
+                this.vel.setMag(prevMag);
                 break;
             }
         }
