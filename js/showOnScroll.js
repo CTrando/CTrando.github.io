@@ -2,7 +2,7 @@
  * Created by Cameron on 3/25/2017.
  */
 
-function initShowOnScroll() {
+function initShowOnScroll(time) {
 
     /**
      * Because javascript is very bad, it calls this thing twice, using the previous value from last time the first time and the correct value the second time
@@ -16,7 +16,7 @@ function initShowOnScroll() {
             var visible = $(this).is(":visible");
 
             if(topOfScreen +screen.height/2 > topOfElement && !visible){
-                $(this).fadeIn(400);
+                $(this).fadeIn(time);
             }
         });
     });

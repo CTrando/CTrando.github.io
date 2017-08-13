@@ -33,9 +33,9 @@ function update() {
     }
 }
 
-function initSwitchFadeText() {
+function initSwitchFadeText(time) {
     isLooping = setInterval(function () {
         update();
-    }, 2000);
+    }, time);
 }
 

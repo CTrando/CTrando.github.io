@@ -2,7 +2,7 @@
  * Created by Cameron on 3/24/2017.
  */
 
-function initFadeInButton() {
+function initFadeInButton(time) {
 
     function fadeButton() {
         $(".fly-in-element").each(function(index){
@@ -13,7 +13,7 @@ function initFadeInButton() {
         });
     }
 
-    setTimeout(fadeButton, 7500);
+    setTimeout(fadeButton, time);
 }
 
 
