@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon Mystery Dungeon Clone</title>
+
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet"/>
+    <link href="css/default.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/fonts.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <div class="title"><h1>Pokemon Mystery Dungeon Clone</h1></div>
+
+    <p>Hello! Thanks for being curious enough about my project to click on this! I'll try to be quick about this and use
+        lots of gifs to help me out!</p>
+    <br>
+    <div class="vid-list">
+        <p>So I will go through my list of features here.</p>
+        <ul>
+            <li>
+                In the game, everything is of course animated. I streamlined the animation process to allow for new
+                animations, although I am a terrible artist so I used the original game sprites. Below I demonstrate the
+                animated movement system.
+            </li>
+            <li>
+                <img src="https://media.giphy.com/media/3o7aCV3Kwf3PL1KTle/giphy.gif">
+            </li>
+            <li>
+                And of course with a movement system, the next thing I wanted to implemented was an attack system.
+                Players can attack enemies, and vice-versa.
+            </li>
+            <li>
+                <img src="https://media.giphy.com/media/3ohhwBNofoICGrUToA/giphy.gif">
+            </li>
+            <li>
+                Items have been implemented into the game. Red berries give health and turns (as the game is
+                turn-based), apples give health, and blue orbs teleport!
+            </li>
+            <li>
+                <img src="https://media.giphy.com/media/3o7aD5W6aET7EJfwJ2/giphy.gif">
+            </li>
+            <li>
+                As in the original Pokemon Mystery Dungeon games, the player can take stairs to advance to the next
+                floor. At the moment, there is no real point to taking the stairs besides seeing some new terrain, but
+                maybe one day in the future I will implement dungeons with bosses after a certain number of floors.
+            </li>
+            <li>
+                <img src="https://media.giphy.com/media/3ohhwj0wkL1JA9Jd5K/giphy.gif">
+            </li>
+            <li>
+                Next, I implemented tile-based traps. This was in the original Mystery Dungeon games; however, I would
+                like to think I improved the animations and made them more than just a little annoying.
+            </li>
+            <li>
+                <img src="https://media.giphy.com/media/l1J9qYM9U6x3mzHG0/giphy.gif">
+            </li>
+            <li>
+                One of the more interesting feature I implemented was pathfinding. This was part of an attempt to create
+                a more intelligence AI for the enemies. However, that process got bogged down by all the other parts of
+                the games
+                such as aesthetics and mechanics. Despite those setbacks, I was at least able to implement pathfinding
+                through both Depth-First and Breadth-First search.
+            </li>
+            <li>
+                <img src="https://media.giphy.com/media/xT9IgEImfDDPvNMFig/giphy.gif">
+            </li>
+            <li>
+                Now it comes down to my last notable feature: Random and Procedural Dungeon Generation. This is where
+                each floor is completely <strong>random yet has similar attributes, such as rooms and stairs</strong>. I
+                would argue that it's
+                comparable to random terrain generation. One could create just a random compilation of rooms, but the
+                trick is that the player <strong>must be able to reach each and every tile from each and every other
+                tile</strong>.
+                This feature is <strong>hard</strong> to do, even for my skills right now. It took me one month to do it
+                the first time, and a week to do it the second time. But now, it has a 100% success rate and it is one
+                of the only part of
+                the game that is completely bug-free. Source code can be found <a
+                    href="https://github.com/CTrando/pmd/blob/master/core/src/com/mygdx/pmd/model/Floor/FloorFactory.java">here.</a>
+            </li>
+            <li>
+                <img src="https://media.giphy.com/media/xT9IgNVHD6VG4P0aBO/giphy.gif">
+            </li>
+        </ul>
+    </div>
+    <div style="text-align: center">
+        <ul id="bottom-buttons">
+            <li class="button"><a href="index.html"> Home </a></li>
+            <li class="button"><a href="webgames.html"> Web Games </a></li>
+            <li class="button"><a href="about.html"> About Me </a></li>
+            <li class="button"><a href="projects.html"> Projects </a></li>
+            <li class="button"><a href="#"> Resume </a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

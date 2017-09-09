@@ -34,6 +34,10 @@ body a {
     user-select: none;
 }
 
+.vid-list li {
+    padding-top: .8em;
+}
+
 h1, h3 {
     margin: 0;
     padding: 0;
